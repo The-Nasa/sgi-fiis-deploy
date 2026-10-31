@@ -39,8 +39,8 @@ spring:
   mail:
     host: ${SPRING_MAIL_HOST:smtp.gmail.com}
     port: ${SPRING_MAIL_PORT:587}
-    username: ${SPRING_MAIL_USERNAME}
-    password: ${SPRING_MAIL_PASSWORD}
+    username: ${SPRING_MAIL_USERNAME:tu_correo@gmail.com}
+    password: ${SPRING_MAIL_PASSWORD:tu_password}
     properties:
       mail:
         smtp:
@@ -76,7 +76,7 @@ app:
     mock: ${APP_MAIL_MOCK:true}
     from: ${APP_MAIL_FROM:}
 
-# Debug logging para OAuth2 (quitar en producción)
+# Debug logging para OAuth2 (quitar en producciÃ³n)
 logging:
   level:
     org.springframework.security: INFO
