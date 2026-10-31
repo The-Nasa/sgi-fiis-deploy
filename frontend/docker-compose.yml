@@ -1,0 +1,12 @@
+services:
+  frontend_fiis_dev:
+    build: .
+    container_name: sgifiis-frontend-dev
+    ports:
+      - "8082:80"
+    networks:
+      - sgifiis-network-shared
+
+networks:
+  sgifiis-network-shared:
+    external: true
